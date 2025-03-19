@@ -1,0 +1,12 @@
+{
+  "session_id": "session_1742395527",
+  "start_time": 1742395527.8732944,
+  "end_time": 1742395527.9100506,
+  "duration_s": 0.036756277084350586,
+  "tasks": [],
+  "total_tokens": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  }
+}

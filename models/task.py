@@ -11,6 +11,7 @@ from datetime import datetime
 class Task:
     """Represents a task to be executed"""
     id: int
+    task: str = "Objective"
     status: str = "incomplete"
     ability: str = "text-completion"
     dependent_task_ids: List[int] = field(default_factory=list)
@@ -92,18 +93,18 @@ class Task:
 
         deps = f" (depends on: {self.dependent_task_ids})" if self.dependent_task_ids else ""
         return f"Task #{self.id}: {description} [{self.status}] [{self.ability}]{deps}"
-    
+
     def mark_complete(self, output: str) -> None:
         """Mark task as complete with output"""
         self.status = "complete"
         self.output = output
         self.completed_at = datetime.now()
-    
+
     def __str__(self) -> str:
         """String representation of task"""
         deps = f" (depends on: {self.dependent_task_ids})" if self.dependent_task_ids else ""
         return f"Task #{self.id}: {self.task} [{self.status}] [{self.ability}]{deps}"
-    
+
     def to_json(self) -> str:
         """Convert task to JSON string"""
         return json.dumps(self.to_dict(), default=str)
