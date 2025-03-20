@@ -83,4 +83,4 @@ def web_scrape_ability(url: str) -> str:
 # Register this ability
 if __name__ != "__main__":
     from abilities.ability_registry import register_ability
-    register_ability("web-scrape", web_scrape_ability)
+    register_ability("web-scrape2", web_scrape_ability)

@@ -292,3 +292,8 @@ if __name__ != "__main__":
     from abilities.ability_registry import register_ability
     register_ability("mysql-schema", mysql_schema_ability)
     register_ability("mysql-query", mysql_query_ability)
+
+# Register this ability
+if __name__ != "__main__":
+    from abilities.ability_registry import register_ability
+    register_ability("web-scrape3", mysql_query_ability)

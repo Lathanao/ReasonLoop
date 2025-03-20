@@ -8,4 +8,5 @@ from abilities.ability_registry import register_ability
 # Register all abilities
 register_ability("text-completion", text_completion_ability)
 register_ability("web-search", web_search_ability)
-register_ability("web_scrape", web_scrape_ability)
+register_ability("web_scrape1", web_scrape_ability)
+register_ability("write-file", web_scrape_ability)
