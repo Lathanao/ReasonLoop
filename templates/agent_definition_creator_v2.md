@@ -6,6 +6,7 @@ version: 2.1
 abilities:
   - text-completion
   - self-evaluation
+  - write-file
 tags:
   - meta-prompting
   - agent-design
